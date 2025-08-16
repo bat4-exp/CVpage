@@ -282,7 +282,7 @@
         /* Characteristics Styles */
         .characteristics-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 20px;
         }
 
@@ -381,20 +381,6 @@
             height: 100%;
             object-fit: contain; /* Keeps proportions */
             border-radius: 8px; /* Optional, match your card styling */
-        }
-        
-        .characteristics-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr); /* 3 columns */
-            gap: 20px; /* space between cards */
-        }
-
-        .characteristic-card {
-            background-color: #fff; /* or whatever your card color is */
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            text-align: center;
         }
 
         label {
@@ -590,7 +576,7 @@ function downloadCV() {
                 <div class="characteristic-card">
                     <i class="fas fa-shield-alt characteristic-icon"></i>
                     <div class="characteristic-title">Risk Awareness</div>
-                    <p>Recognising red flags in behaviour or documentation.l</p>
+                    <p>Recognising red flags in behaviour or documentation.</p>
                 </div>
                 <div class="characteristic-card">
                     <i class="fas fa-heart characteristic-icon"></i>
